@@ -33,4 +33,4 @@ This project provides a simple automation script using AutoIt and Nolvus to stre
 Watch this video tutorial for more info: https://www.youtube.com/watch?v=6YTKnf7CfMw
 
 ## Contribution
-Feel free to do whatever you want for this script. Hope that script helps you out. 
+Feel free to do whatever you want for this script. Hope that script helps you out. If you have any problem create an issue. I'll try my best to resolve it for you.
