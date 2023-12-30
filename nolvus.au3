@@ -14,7 +14,7 @@ Local $winLoc = 0
 Local $nolvusPath = "D:\Novalus\NolvusDashBoard.exe" ;To change
 
 Func reset()
-	$pid = Run()
+	$pid = Run($nolvusPath)
 	$startTime = TimerInit()
 	
 	WinWait("[CLASS:Nolvus Dashboard]", "", 10)
