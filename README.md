@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project provides a simple automation script using AutoIt and Nolvus to streamline the process of installing mods for The Elder Scrolls V: Skyrim without the need for a Nexus Premium account. The script automates the tedious steps involved in mod installation, making it user-friendly and accessible to everyone. The code is not perfect and prone to error but it will help you to speed the process. 
+This project provides a simple automation script using AutoIt and Nolvus to streamline the process of installing mods for The Elder Scrolls V: Skyrim without the need for a Nexus Premium account. The script automates the tedious steps involved in mod installation, making it user-friendly and accessible to everyone. The code is not perfect and prone to error but it will help you speed up the process. 
 
 ## Requirements
 
