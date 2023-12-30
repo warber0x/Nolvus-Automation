@@ -22,6 +22,7 @@ This project provides a simple automation script using AutoIt and Nolvus to stre
   ```
   the code above is responsible to click on the radio and resume button.
   To have the exact position of the buttons in your screen, use the AutoIT v3 window Info => Mouse tab => Position
+
   ![image](https://github.com/warber0x/Nolvus-Automation/assets/7810067/8d1042a1-70a2-4b71-b412-934715c18425)
   
 - Build the script and run it.
