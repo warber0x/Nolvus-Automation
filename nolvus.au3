@@ -29,8 +29,8 @@ Func click()
 	Sleep(9000) ; 
 	$y = $WinLoc[1] + 70
 	MouseMove($x, $y, 2)
-	Sleep(1000)
-	MouseWheel("down", 4)
+	Sleep(2000)
+	MouseWheel("down", 5)
 	$startTime = TimerInit()
 EndFunc
 
@@ -43,7 +43,8 @@ Func init()
 	$y = $winLoc[1] + 70
 	
 	MouseMove($x, $y, 0)
-	MouseWheel("down", 4)
+	Sleep(2000)
+	MouseWheel("down", 5)
 EndFunc
 
 reset()
