@@ -30,7 +30,7 @@ This project provides a simple automation script using AutoIt and Nolvus to stre
 - Build the script and run it.
 
 ## Video Tutorial
-Watch this video tutorial for more info: 
+Watch this video tutorial for more info: https://www.youtube.com/watch?v=6YTKnf7CfMw
 
 ## Contribution
 Feel free to do whatever you want for this script. Hope that script helps you out. 
