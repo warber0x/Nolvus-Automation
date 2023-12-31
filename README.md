@@ -8,29 +8,21 @@ This project provides a simple automation script using AutoIt and Nolvus to stre
 
 ## Requirements
 
-- Ensure that AutoIt is installed on your system. You can download it from the official website.
-- Script in this repo
+- Ensure that AutoIt is installed on your system. You can download it from the official website: https://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3-setup.zip
+- This repo.
 
 ## How to use:
 
 - Install AutoIT
-- clone the repo and put the script "nolvus.au3" in the same folder where NovlusDashboard is installed.
-- Load the script in sciTE Script Editor.
-- Locate your Nolvus folder and place it in this variable `Local $nolvusPath = "D:\Novalus\NolvusDashBoard.exe"`
-- Optional: Change the position of your cursor if necessary:
-  ```
-  MouseClick("left", 1182, 570)
-	MouseClick("left", 1770, 1136)
-  ```
-  the code above is responsible to click on the radio and resume button.
-  To have the exact position of the buttons in your screen, use the AutoIT v3 window Info => Mouse tab => Position
-
-  ![image](https://github.com/warber0x/Nolvus-Automation/assets/7810067/8d1042a1-70a2-4b71-b412-934715c18425)
-  
+- clone the repo and put the script `nolvus.au3` in the same folder where `NovlusDashboard.exe` is installed.
+- Load the script in `sciTE Script Editor` software
+- Locate your Nolvus folder, copy the path and replace the path in this variable `Local $nolvusPath = "D:\Novalus\NolvusDashBoard.exe"` by your path.
 - Build the script and run it.
+
+=> Important: Please refrain from using your mouse during the execution of this script, as it may disrupt the automation process. The script is particularly useful if you intend to leave your computer downloading overnight.
 
 ## Video Tutorial
 Watch this video tutorial for more info: https://www.youtube.com/watch?v=6YTKnf7CfMw
 
 ## Contribution
-Feel free to do whatever you want for this script. Hope that script helps you out. If you have any problem create an issue. I'll try my best to resolve it for you.
+Feel free to do whatever you want for this script. If you have any problem create an issue. I'll try my best to resolve it for you.
