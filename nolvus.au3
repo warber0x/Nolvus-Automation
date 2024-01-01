@@ -22,6 +22,7 @@ Local $y = 0
 ; Misc variables for tests
 ; ========================
 Local $mouseWheelSteps = 6
+Local $steps = 2
 Local $winLoc = 0
 Local $dashboard = ""
 Local $isPageUp = False
@@ -70,11 +71,18 @@ Func click()
 	;====================================
 	$startTime = TimerInit()
 	$isPageUp = False
-	$backgroundColor = 0x444444
+	$backgroundColor = 0x00444444
 	$mouseWheelSteps = 6
+	$steps = 2
 EndFunc
 
 Func init()
+	
+	$backgroundColor = 0x444444
+	if $mouseWheelSteps == 0 Or $mouseWheelSteps < 0 Then
+		$mouseWheelSteps = 6
+	EndIf
+	
 	; Init the window and get size
 	; ============================
 	WinActivate($mainWindowClass , $downloadWindowTitle )
@@ -112,11 +120,10 @@ While 1
 				$isPageUp = True
 			EndIf
 			
-			$currentColor = PixelGetColor($x, $y)
-
 			; Check if the color is white then click
 			; =====================================
-			If $currentColor = $backgroundColor Then
+			$currentColor = PixelGetColor($x, $y)
+			If $currentColor == $backgroundColor Then
 				MouseWheel("down", $mouseWheelSteps)
 				$winLoc = WinGetPos($mainWindowClass , $downloadWindowTitle)
 				$x = $winLoc[0] + ($winLoc[2] / 2)
@@ -140,5 +147,11 @@ While 1
 	
 	; Slow down the mouse wheel if the download button not visible
 	; ============================================================
-	$mouseWheelSteps = $mouseWheelSteps - 2
+	if $mouseWheelSteps > 0 Then
+		$mouseWheelSteps = $mouseWheelSteps - $steps
+	Else
+		if $steps > 1 Then
+			$steps = 1
+		EndIf
+	EndIf
 WEnd
