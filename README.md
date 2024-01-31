@@ -16,7 +16,7 @@ This project provides a simple automation script using AutoIt and Nolvus to stre
 - Install AutoIT
 - clone the repo and put the script `nolvus.au3` in the same folder where `NovlusDashboard.exe` is installed.
 - Load the script in `sciTE Script Editor` software
-- Locate your Nolvus folder, copy the path and replace the path in this variable `Local $nolvusPath = "D:\Novalus\NolvusDashBoard.exe"` by your path.
+- Locate your Nolvus folder, copy the path of the Nolvus folder, and replace it in this variable `Local $nolvusPath = "D:\Novalus\NolvusDashBoard.exe"`
 - Build the script and run it.
 
 => Important: Please refrain from using your mouse during the execution of this script, as it may disrupt the automation process. The script is particularly useful if you intend to leave your computer downloading overnight.
